@@ -1,11 +1,21 @@
-# Python App Docker Containers
+# Dockerizing Python Apps
 
-Package to install: NumPy
-Package Installations Using: pip [directly]
+- Package(s) to install: NumPy
+- Package Installations Using: pip [directly]
 
 ## Docker Commands
-Build Image and Run Docker Container 
+### Build Docker Image
 ```commandline
 docker build -t pydocker-4 .
-docker run --name pydocker-4-app pydocker-4 --rm
+```
+
+### Run Docker Container
+Run a container
+```commandline
+docker run --name pydocker-4-app pydocker-4
+```
+
+Run a container once and remove when app finishes
+```commandline
+docker run --rm pydocker-4
 ```
